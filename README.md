@@ -18,4 +18,8 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 文件目录说明：
+    ## components :组件
+    ## pages : 存放小程序的页面
+    ## utils : 可选（可删除），代码中一些公用工具函数组织成模块放在这里
+    ## main.js App.vue : 入口文件
