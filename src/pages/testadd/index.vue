@@ -6,12 +6,11 @@
 </template>
 
 <script>
-import globalStore from '../../stores/global.store.js'
 
 export default {
   computed: {
     count () {
-      return globalStore.state.count
+      return this.$Vuex.state.count
     }
   }
 }

@@ -7,22 +7,21 @@
 </template>
 
 <script>
-import globalStore from '../../stores/global.store'
 
 export default {
   computed: {
     count () {
-      return globalStore.state.count
+      return this.$Vuex.state.count
     }
   },
 
   methods: {
     hanleIncrement () {
-      globalStore.commit('increment')
+      this.$Vuex.commit('increment')
     },
 
     hanleDecrement () {
-      globalStore.commit('decrement')
+      this.$Vuex.commit('decrement')
     }
   }
 }

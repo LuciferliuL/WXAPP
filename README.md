@@ -54,3 +54,11 @@ npm run build --report
 
 # mpvue 
     ## 写的小程序组件之间不是引用单Vue实例的结构，是多Vue实例，每个page下面的main说明了这个。所以在使用vuex的时候，直接通过import导入store的模块文件，然后调用是比较灵活的。
+    ## import Vuex from './stores/global.store'
+        Vue.prototype.$Vuex = Vuex
+        在vue实例里面的原型添加方法，这样在其他的地方可以直接使用vuex
+    ## 推荐把小程序的所有api都封装成promise形式，原生的是回调形式
+
+# 小程序标签
+    navigator 导航， url添加跳转地址
+    wx.navigator 方法来跳转

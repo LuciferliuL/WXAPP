@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App'
+import Vuex from './stores/global.store'
 
+Vue.prototype.$Vuex = Vuex
 Vue.config.productionTip = false
 App.mpType = 'app'
 
