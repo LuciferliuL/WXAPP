@@ -1,7 +1,10 @@
 <template>
     <div class="container" @click="clickHandle">
         <div class="message">{{msg}}</div>
-        <ClickCounter></ClickCounter> 
+        <ClickCounter :init-num="10" @clicknum="handleClickNum">
+                <!-- 填充插槽 -->
+            <input type="checkbox">禁用
+        </ClickCounter> 
     </div> 
 </template>
 <script>
@@ -16,6 +19,9 @@ export default {
   methods: {
     clickHandle () {
       this.msg = 'Clicked!!!!'
+    },
+    handleClickNum (data) {
+      console.log(data.num)
     }
   }
 }
