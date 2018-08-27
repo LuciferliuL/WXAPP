@@ -23,6 +23,17 @@ export default {
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: '第一个小程序',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      borderStyle: 'black',
+      list: [{
+        pagePath: 'pages/index/main',
+        // text: '首页',
+        selectedIconPath: '../static/181501-interface.jpg'
+      }, {
+        pagePath: 'pages/testadd/main',
+        text: '日志'
+      }]
     }
   }
 }
